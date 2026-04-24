@@ -40,15 +40,7 @@ class Server:
 
     def get_hyper_index(self, index: int = None,
                         page_size: int = 10) -> Dict[str, Any]:
-        """Return deletion-resilient pagination metadata and page data.
-
-        Args:
-            index: The starting index to paginate from.
-            page_size: The number of items to include in a page.
-
-        Returns:
-            A dictionary containing index, next_index, page_size, and data.
-        """
+        """Return deletion-resilient page with hypermedia metadata."""
 
         if index is None:
             index = 0
