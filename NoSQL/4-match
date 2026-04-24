@@ -1,0 +1,4 @@
+// lists all document in a collection with a default name
+db.school.find({
+	name: "Holberton school"
+})
